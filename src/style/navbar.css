@@ -1,0 +1,79 @@
+.navbar {
+    background: #393e46;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav h2 {
+    color: #eeeeee;
+}
+
+.nav button {
+    width: 86px;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    color: #eeeeee;
+    letter-spacing: 1px;
+    background: #fd7014;
+    margin-right: 0%;
+    margin-top: -0.2%;
+}
+
+@media only screen and (max-width: 1027px) and (min-width:601px) {
+    .navbar{
+        width: 100%;
+        display: inline-block;
+    }
+
+    #generate{
+        display: flex;
+        margin-left: 40%;
+        margin-top: -0.6cm;
+    }
+
+    #logOut{
+        display: flex;
+        margin-left: 90%;
+        margin-top: -0.75cm;
+        padding: 1%;
+        padding-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        width: 100%;
+        display: inline-block;
+    }
+
+    #generate{
+        display: flex;
+        margin-top: 5%;
+    }
+
+    #logOut{
+        float: left;
+        padding-right: 15%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #logOut{
+        padding-right: 20%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #logOut{
+        padding-right: 25%;
+        align-items: center;
+        text-align: center;
+    }
+}
