@@ -1,5 +1,5 @@
 import crypto from "crypto";
-const secret = "***REMOVED***";
+const secret = process.env.REACT_APP_ENCRYPTION_KEY;
 
 const encrypt = (password) => {
     /*const iv = Buffer.from(crypto.randomBytes(16));

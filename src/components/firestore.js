@@ -9,7 +9,7 @@ var CryptoJS = require("crypto-js");
 const database = fire.firestore();
 
 function decrypt(password){
-    var bytes = CryptoJS.AES.decrypt(password, '***REMOVED***');
+    var bytes = CryptoJS.AES.decrypt(password, process.env.REACT_APP_ENCRYPTION_KEY);
     var decryptedData = bytes.toString(CryptoJS.enc.Utf8);
 
     return decryptedData;
