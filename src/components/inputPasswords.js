@@ -15,7 +15,7 @@ const InputPasswords = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        var ciphertext = CryptoJS.AES.encrypt(password, '***REMOVED***').toString();
+        var ciphertext = CryptoJS.AES.encrypt(password, process.env.REACT_APP_ENCRYPTION_KEY).toString();
 
         database.collection("password-"+userAuth).add({
             title: title,
